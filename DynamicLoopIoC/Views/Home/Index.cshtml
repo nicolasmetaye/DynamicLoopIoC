@@ -1,0 +1,51 @@
+﻿@model DynamicLoopIoC.Models.Models.BooksListModel
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+        <div class="success" >
+            @Model.SuccessMessage
+        </div>
+}
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div style="text-align: center">
+        <label style="font-size: 1.2em"> Search by an ISBN, Title
+            <input type="text" style="font-size: 1em" name="search" /></label> <input type="submit" value="Go" style="font-size: 1.2em"/>
+    </div>
+}
+<div style="text-align: left">
+    <a href="/Books/Add" class="link-button">Add a book</a>
+</div>
+<div style="padding-top: 20px">
+    @if (Model.Books.Any())
+    {
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model.Books)
+                {
+                    <tr>
+                        <td>@book.Title</td>
+                        <td>@book.AuthorFullName</td>
+                        <td>@book.ISBN</td>
+                        <td style="text-align: center"><a href="/Books/Edit/@book.Id" class="link-button">Edit</a></td>
+                        <td style="text-align: center"><a href="/Books/Delete/@book.Id" class="link-button">Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+    <div class="error" >
+        no books found
+    </div>
+    }
+</div>

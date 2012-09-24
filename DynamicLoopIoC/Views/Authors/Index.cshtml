@@ -1,0 +1,40 @@
+﻿@model DynamicLoopIoC.Models.Models.AuthorsListModel
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+        <div class="success" >
+            @Model.SuccessMessage
+        </div>
+}
+<div style="text-align: left">
+    <a href="/Authors/Add" class="link-button">Add an author</a>
+</div>
+<div style="padding-top: 20px">
+    @if (Model.Authors.Any())
+    {
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var author in Model.Authors)
+                {
+                    <tr>
+                        <td>@author.FullName</td>
+                        <td style="text-align: center"><a href="/Authors/Edit/@author.Id" class="link-button">Edit</a></td>
+                        <td style="text-align: center"><a href="/Authors/Delete/@author.Id" class="link-button">Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="error" >
+            no authors found
+        </div>
+    }
+</div>

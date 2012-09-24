@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6AD30A4-B0C7-4CB7-A70A-9C18619A1448}"
+	ProjectSection(SolutionItems) = preProject
+		DynamicLoopIoC.vsmdi = DynamicLoopIoC.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC", "DynamicLoopIoC\DynamicLoopIoC.csproj", "{DEC2506C-5AE9-4957-A078-9E0470C6145F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC.Tests", "DynamicLoopIoC.Tests\DynamicLoopIoC.Tests.csproj", "{BBFE4724-0DC4-460C-9656-738AD7755488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC.Domain", "DynamicLoopIoC.Domain\DynamicLoopIoC.Domain.csproj", "{668BD281-1A4E-4158-BFE7-D2343A2BA418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC.Models", "DynamicLoopIoC.Models\DynamicLoopIoC.Models.csproj", "{540503CD-D0B7-4D01-8C5B-83394C616EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC.Common", "DynamicLoopIoC.Common\DynamicLoopIoC.Common.csproj", "{BD8A6038-8006-4437-AEF3-A76D6E3AA399}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DynamicLoopIoC.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEC2506C-5AE9-4957-A078-9E0470C6145F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC2506C-5AE9-4957-A078-9E0470C6145F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC2506C-5AE9-4957-A078-9E0470C6145F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC2506C-5AE9-4957-A078-9E0470C6145F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFE4724-0DC4-460C-9656-738AD7755488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFE4724-0DC4-460C-9656-738AD7755488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFE4724-0DC4-460C-9656-738AD7755488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFE4724-0DC4-460C-9656-738AD7755488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668BD281-1A4E-4158-BFE7-D2343A2BA418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668BD281-1A4E-4158-BFE7-D2343A2BA418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668BD281-1A4E-4158-BFE7-D2343A2BA418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668BD281-1A4E-4158-BFE7-D2343A2BA418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540503CD-D0B7-4D01-8C5B-83394C616EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540503CD-D0B7-4D01-8C5B-83394C616EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540503CD-D0B7-4D01-8C5B-83394C616EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540503CD-D0B7-4D01-8C5B-83394C616EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8A6038-8006-4437-AEF3-A76D6E3AA399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8A6038-8006-4437-AEF3-A76D6E3AA399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8A6038-8006-4437-AEF3-A76D6E3AA399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8A6038-8006-4437-AEF3-A76D6E3AA399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
