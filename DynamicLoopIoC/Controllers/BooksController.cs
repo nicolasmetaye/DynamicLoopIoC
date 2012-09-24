@@ -39,7 +39,7 @@ namespace DynamicLoopIoC.Controllers
             if (ModelState.IsValid)
             {
                 var book = _bookRepository.CreateNew();
-                book = Mapper.Map<BookModel, Book>(model, book);
+                book = Mapper.Map(model, book);
                 _bookRepository.Insert(book);
                 return RedirectToAction("Index", "Home", new { message = (int)BooksListSuccessMessage.BookAddedSuccesfully });
             }
@@ -51,7 +51,8 @@ namespace DynamicLoopIoC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var book = Mapper.Map<BookModel, Book>(model);
+                var book = _bookRepository.CreateNew();
+                book = Mapper.Map(model, book);
                 _bookRepository.Save(book);
                 return RedirectToAction("Index", "Home", new { message = (int)BooksListSuccessMessage.BookEditedSuccesfully });
             }

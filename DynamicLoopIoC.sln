@@ -2,11 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6AD30A4-B0C7-4CB7-A70A-9C18619A1448}"
-	ProjectSection(SolutionItems) = preProject
-		DynamicLoopIoC.vsmdi = DynamicLoopIoC.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC", "DynamicLoopIoC\DynamicLoopIoC.csproj", "{DEC2506C-5AE9-4957-A078-9E0470C6145F}"
 EndProject
@@ -19,9 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLoopIoC.Common", "DynamicLoopIoC.Common\DynamicLoopIoC.Common.csproj", "{BD8A6038-8006-4437-AEF3-A76D6E3AA399}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = DynamicLoopIoC.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

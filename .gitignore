@@ -11,3 +11,11 @@ _ReSharper.*
 # Teamcity
 *.TeamCity.*
 
+# Tests settings
+*vsmdi
+.testsettings
+.sdf
+
+# Readme
+readme.md
+

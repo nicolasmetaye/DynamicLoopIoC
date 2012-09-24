@@ -8,6 +8,8 @@ namespace DynamicLoopIoC.IoC
     {
         protected override IController GetControllerInstance(System.Web.Routing.RequestContext requestContext, Type controllerType)
         {
+            if (controllerType == null)
+                return null;
             return (IController)ObjectFactory.GetInstance(controllerType);
         }
     }
